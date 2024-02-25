@@ -1,0 +1,159 @@
+
+body {
+  font-family: Helvetica, sans-serif;
+
+}
+
+.ulStyle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.liStyle {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+a:hover {
+  font-size: 30px;
+}
+
+a:visited {
+  color: black
+}
+
+#logo {
+  letter-spacing: 3px;
+  color: #000000;
+  background-color: white;
+  float: left;
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+iframe {
+  margin: auto;
+  display: block;
+}
+
+h2 {
+  margin: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  text-align: center;
+  margin-top: 30PX;
+  padding: 40px;
+}
+
+.aa:hover {
+  color: black
+}
+
+.aa:visited {
+  color: black
+}
+
+#mapa {
+  padding: 30px;
+  margin: 0;
+  height: 450px;
+}
+
+#dobrodoslica {
+  margin: 0;
+  height: 500px;
+  background-image: url(../slike/planine.jpeg);
+  background-size: cover;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  color: white;
+}
+
+footer {
+  background-color: rgb(179, 84, 166);
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 8pt;
+  color: rgb(255, 255, 255);
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+input[type=email],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #f3a6e2;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form {
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.dugme {
+  margin-top: 50px;
+  text-decoration: none;
+  background-color: #fd9ff5;
+  color: #fff;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 1000px;
+  height: 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  border: none;
+  display: block;
+}
+
+.dugme:hover {
+  color: #fd9ff5;
+  background-color: white;
+  border: #fd9ff5 solid 2px;
+}
+
+.aa:visited {
+  color: white;
+}

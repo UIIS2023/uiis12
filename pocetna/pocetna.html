@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Početna</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='pocetna.css'>
+  <script src='pocetna.js'></script>
+
+  <!-------
+TODO
+a. navigacioni meni, (ka poocetnoj, da zasebnim i ka igrici)
+b. Google mapa,
+c. kontakt forma i
+d. proizvoljan sadržaj.
+
+
+-->
+
+</head>
+
+<body>
+  <header>
+    <ul class="ulStyle">
+      <div id="logo">
+        <h1>Future & Co</h1>
+      </div>
+      <li class="liStyle"><a href="../kristina.html">O nama</a></li>
+      <li class="liStyle"><a href="../bojana.html">Horoskop</a></li>
+      <li class="liStyle"><a href="../igrica/igrica.html">Predviđanje budućnosti</a></li>
+      <li class="liStyle"><a href="#pocetna" style="font-size: 26;"> <b>Početna</b></a></li>
+    </ul>
+    <hr>
+  </header>
+
+
+  <div id="dobrodoslica">
+    <h1 style="font-size: 60px; margin-bottom: 0;"><b>Dobrodošli!</b></h1>
+    Nalazite se na korak od saznanja o Vašoj budućnosti!
+
+    <a class="dugme" href="../igrica/igrica.html">Započni avanturu</a>
+
+  </div>
+  <div id="mapa">
+    <h2>Tačno na pola puta između Loznice i Kusatka, u selu Vrelo nalazi se naša rezidencija!
+      <br>
+      <a href="#forma" class="aa" style="color: black"> <b>Poseti nas i uživo!</b></a>
+    </h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45547.08854885666!2d19.984894704243317!3d44.480464515971605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a18aeca846ced%3A0x3ceb0dfb4770d0fe!2sVrelo!5e0!3m2!1sen!2srs!4v1705095005248!5m2!1sen!2srs"
+      width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+  <br>
+
+  <form action="backend.php" method="POST" id="forma">
+    <h3>Da biste nas posetili morate uneti svoje podatke, a mi ćemo vam poslati našu adresu! </h3>
+
+    <label for="fname">Ime</label>
+    <input type="text" id="fname" name="firstname" placeholder="Unesite vaše ime...">
+    <label for="lname">Prezime</label>
+    <input type="text" id="lname" name="lastname" placeholder="Unesite vaše prezime...">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Unesite vaš email...">
+
+    <label for="razlog">Razlog zašto želite da nas posetite</label>
+    <select id="razlog" name="razlog">
+      <option value="turisticki">Turistički</option>
+      <option value="strah">Nesigurnost i Strah od Nepoznatog</option>
+      <option value="planiranje">Planiranje i Odlučivanje</option>
+      <option value="psiho">Psihološka Sigurnost</option>
+      <option value="razvoj">Lični Razvoj</option>
+      <option value="samopouzdanje">Razvoj Intuicije i Samopouzdanja</option>
+      <option value="zabava">Zabava i Razonoda</option>
+    </select>
+
+    <input type="submit" value="Pošalji">
+  </form>
+
+  <footer>
+    Future & Co
+  </footer>
+
+</body>
+
+</html>

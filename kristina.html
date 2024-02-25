@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>O nama</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+
+    }
+
+    .ulStyle {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .liStyle {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color: rgb(68, 68, 68);
+      font-size: 24px;
+    }
+
+    a:hover {
+      font-size: 30px;
+    }
+
+    a:visited {
+      color: rgb(68, 68, 68);
+    }
+
+    .logo {
+      font-family: Helvetica, sans-serif;
+      letter-spacing: 3px;
+      color: #000000;
+      float: left;
+      padding-left: 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .kontent {
+      width: 90%;
+      padding: 30px;
+      height: fit-content;
+      font-size: 20px;
+      border-radius: 5px;
+      color: rgb(68, 68, 68);
+      border: rgb(231, 141, 224) dashed 1px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      width: 350px;
+      margin: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .alt-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      padding: 3px;
+    }
+
+    .image-container:hover .alt-text {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+        TODO
+a. navigacioni meni (isti kao sa naslovne strane),
+b. galeriju slika (minimum 9),
+c. tekst,
+d. listu i
+e. proizvoljan sadržaj koji će popuniti stranicu.
+    -->
+
+  <ul class="ulStyle">
+    <div class="logo">
+      <h1>Future & Co</h1>
+    </div>
+    <li class="liStyle"><a href="#kristina" style="font-size: 26;"><b>O nama</b></a></li>
+    <li class="liStyle"><a href="./bojana.html">Horoskop</a></li>
+    <li class="liStyle"><a href="./igrica/igrica.html">Predviđanje budućnosti</a></li>
+    <li class="liStyle"><a href="./pocetna/pocetna.html">Početna</a></li>
+  </ul>
+  <hr>
+
+  <div class="kontent">
+    <h2>Čime se bavimo?</h2>
+    <p>
+      Naša kompanija je pionir u pružanju usluga predviđanja budućnosti, koristeći napredne analitičke metode i
+      tehnologije. Naša stručnost leži u prikupljanju i analizi ogromnih skupova podataka, identifikaciji ključnih
+      trendova i modeliranju budućih scenarija. Sa osnovnim fokusom na inovacijama, naša kompanija stvara vrednost za
+      klijente širom različitih industrija.
+    </p>
+
+    <h2>Ko smo mi?</h2>
+    <p>
+      Naš tim stručnjaka čine vodeći analitičari, istraživači i tehnološki stručnjaci koji su posvećeni pružanju visoko
+      preciznih prognoza. Kombinujemo napredne algoritme mašinskog učenja, veštačke inteligencije i dubinskog
+      analiziranja
+      podataka kako bismo dobili dubok uvid u kompleksne obrasce i dinamiku koji oblikuju budućnost.
+    </p>
+    <h2>Šta nudimo?</h2>
+    <p>
+      Kroz pažljivo osmišljene usluge predviđanja, naša kompanija omogućava klijentima da donose informisane odluke,
+      minimiziraju rizike i stvaraju strategije koje su prilagođene dinamičnim promenama u okruženju. Bilo da se radi o
+      tržištu, ekonomiji, tehnologiji ili društvenim trendovima, pružamo sveobuhvatne analize koje podržavaju poslovni
+      uspeh naših klijenata.
+    </p>
+    <h2>Koja je naša vizija?</h2>
+    <p>
+      Sa usmerenjem ka budućnosti, naša kompanija nije samo posvećena pružanju tačnih prognoza, već i razvoju
+      inovativnih
+      alatki koje unapređuju sposobnost predviđanja. Verujemo da sučelje između sadašnjosti i budućnosti može biti mesto
+      gde se rađaju prilike, a mi smo tu da klijentima pružimo ključ za otključavanje njihovog potencijala u svetu koji
+      dolazi.
+    </p>
+
+    <h2>Ko su naši klijenti?</h2>
+    <p>Ovo su neki od naših najpoznatijih klijenata:</p>
+    <ul>
+      <li>Novak Đoković</li>
+      <li>Keanu Reeves</li>
+      <li>Vesna Vukelić</li>
+      <li>Elon Musk</li>
+      <li>Mario Vrećo</li>
+      <li>Lepa Brena</li>
+
+    </ul>
+  </div>
+
+  <div class="kontent">
+    <h2>Galerija</h2>
+
+    <div class="image-gallery">
+      <div class="image-container">
+
+        <img src="./slike/magovi.webp" alt="Naši najstariji magovi">
+        <div class="alt-text">Naši najstariji magovi na seminaru u 18. veku</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/rezidencija.jpeg" alt="rez">
+        <div class="alt-text">Naša rezidencija</div>
+
+      </div>
+
+      <div class="image-container">
+
+        <img src="./slike/nole.avif" alt="Novak Đoković nakon što smo mu predvideli da će osvojiti 24. Grand Slam">
+        <div class="alt-text">Novak Đoković nakon što smo mu predvideli da će osvojiti 24. Grand Slam</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/keanu.webp" alt="Keanu Reeves devedesetih, kod nas u rezidenciji">
+        <div class="alt-text">Keanu Reeves devedesetih, kod nas u rezidenciji</div>
+
+      </div>
+
+
+      <div class="image-container">
+
+        <img src="./slike/ml.jpg" alt="ml">
+        <div class="alt-text">Mašina uči kako da predvidi budućnost ljudima</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/pasulj.jpeg" alt="pasulj">
+        <div class="alt-text">Gledanje u pasulj kao jedna od naših metoda</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/kafica.jpg" alt="kafica">
+        <div class="alt-text">Gledanje u šolju kao jedna od naših metoda</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/mario.png" alt="mario">
+        <div class="alt-text">Mario Vrećo u jednom od naših rituala</div>
+
+      </div>
+      <div class="image-container">
+
+        <img src="./slike/roska.jpeg" alt="roska">
+        <div class="alt-text">Roska</div>
+
+      </div>      
+
+      <div class="image-container">
+
+        <img src="./slike/vesna-vukelic-vendi.jpeg" alt="Vesna Vukelić u jednoj od redovnih poseta">
+        <div class="alt-text">Vesna Vukelić u jednoj od redovnih poseta</div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudbina</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='igrica.js'></script>
+    <style>
+        .ulStyle {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .liStyle {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: rgb(68, 68, 68);
+            font-size: 24px;
+        }
+
+        a:hover {
+            font-size: 30px;
+        }
+
+        a:visited {
+            color: rgb(68, 68, 68);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            height: 70%;
+            float: left;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            margin-top: 0;
+            margin-left: 12px;
+            word-break: break-word;
+            max-width: 58%;
+        }
+
+        .kartica {
+            padding: 30px;
+            margin: auto;
+            margin-bottom: 20px;
+            display: block;
+            width: 600px;
+            height: 200px;
+            border: 2px #fb81ff dotted;
+            border-radius: 10px;
+        }
+
+        #kontent {
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-family: Verdana, sans-serif;
+            letter-spacing: 1px;
+            margin-top: 0%;
+        }
+
+        .logo {
+            font-family: Helvetica, sans-serif;
+            letter-spacing: 3px;
+            color: #000000;
+            float: left;
+            padding-left: 25px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .naslov {
+            font-family: Arial;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #dugme{
+            margin-top: 50px;
+            text-decoration: none;
+            background-color: #fd9ff5;
+            color: #fff;
+            margin:auto;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+            height: 120px;
+            font-size: 30px;
+            border-radius: 20px;
+            transition: all 0.5s;
+            border: none;
+            display: block;
+        }
+        #dugme:hover{
+            color: #fd9ff5;
+            background-color: white;
+            border: #fd9ff5 solid 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ulStyle">
+        <div class="logo">
+            <h1>Future & Co</h1>
+        </div>
+        <li class="liStyle"><a href="../kristina.html">O nama</a></li>
+        <li class="liStyle"><a href="../bojana.html">Horoskop</a></li>
+        <li class="liStyle"><a href="#igrica" style="font-size: 26;"><b>Predviđanje budućnosti</b></a></li>
+        <li class="liStyle"><a href="../pocetna/pocetna.html">Početna</a></li>
+    </ul>
+    <hr>
+
+    
+
+    <div id="kontent">
+        <button id="dugme" onclick="OdrediBuducnost()">Saznajte kako će izledati Vaša 2024. godina!</button>
+    </div>
+
+
+
+</body>
+
+</html>
